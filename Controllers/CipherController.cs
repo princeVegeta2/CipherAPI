@@ -36,7 +36,7 @@ namespace CipherAPI.Controllers
                     return BadRequest("Invalid language");
             }
 
-            return Ok(encryptedText);
+            return Ok(new { encryptedText });//converted to json
         }
     }
 }
